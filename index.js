@@ -50,7 +50,17 @@ inquirer.prompt([
         name: 'license',
         type: 'list',
         choices: ['Creative Commons CC0-1.0' , 'MIT OpenSource' , 'GNU AGPL v3' , 'Apache 2.0'],
-    }
+    },
+    {
+        message: 'Please enter your github username?',
+        name: 'author',
+        type: 'input',
+    },
+    {
+        message: 'Please enter your email?',
+        name: 'email',
+        type: 'input',
+    },
 ]).then(projectInfo => {
       // Generate the markdown text string from user input. 
       let markdownText = generateMarkdown(projectInfo);

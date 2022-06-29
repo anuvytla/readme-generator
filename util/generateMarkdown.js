@@ -9,17 +9,20 @@ function generateMarkdown(projectInfo) {
                         \n ${projectInfo.description}
                         \n## Table of Contents
                         \n* [Installation](#Installation)
-                        \n* [Instructions](#Instructions)
+                        \n* [Usage](#Usage)
                         \n* [Collaborators](#Collaborators)
                         \n* [License](#License)
+                        \n* [Questions](#Questions)
                         \n## Installation
                         \n${projectInfo.installation}
-                        \n## Instructions
+                        \n## Usage
                         \n${projectInfo.instructions}
                         \n## Collaborators
                         \n${projectInfo.collaborators}
                         \n## License
-                        \nThis project is licensed under the [${projectInfo.license}](${licenseUrl}).`)
+                        \nThis project is licensed under the [${projectInfo.license}](${licenseUrl}).
+                        \n## Questions
+                        \nFor any questions and comments reach out to the author [${projectInfo.author}](https://www.github.com/${projectInfo.author}) at [${projectInfo.email}](mailto:${projectInfo.email})`)
 
   return readMeMarkdown ;
 }
